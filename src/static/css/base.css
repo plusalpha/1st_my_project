@@ -1,0 +1,36 @@
+.jumbotron {
+  color: #ffffff;
+  background-color: #ff9400;
+
+}
+
+
+h1, h2 {
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+h2 {
+  color: #ff9400;
+  margin-bottom: 30px;
+
+}
+
+
+.post  {
+
+  font-family: 'Catamaran', sans-serif;
+  margin-bottom:60px;
+}
+
+.text  {
+
+  text-align:justify;
+  font-size: 14pt;
+}
+
+.date {
+  color: #828282;
+  float:right;
+  font-size: 12pt;  
+}

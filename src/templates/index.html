@@ -1,0 +1,33 @@
+
+<!-- 과제 2,4 동시에 했습니다. -->
+
+{% extends "base.html" %}
+
+
+{% block body %}
+  <div class="container">
+    <div class ="jumbotron text-center">
+      <h1>Community FreeBoard</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+
+        {% for post in posts %}
+          <div class="post">
+
+            <h2>{{ post.title }}</h2>
+
+            <p class="text">{{ post.text|linebreaksbr }}</p>
+
+            <div class="date">
+            <p>published: {{ post.created_date }} by {{ post.user }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+
+{% endblock %}
